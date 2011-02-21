@@ -1,5 +1,5 @@
 {
-   "abstract" : "use Bio::SeqIO as a Catalyst view",
+   "abstract" : "use BioPerl's Bio::SeqIO as a Catalyst view",
    "author" : [
       "Robert Buels <rbuels@cpan.org>"
    ],
@@ -23,6 +23,7 @@
          "requires" : {
             "Bio::Root::Version" : "1.005002",
             "Bio::SeqIO" : 0,
+            "Catalyst::Action::RenderView" : 0,
             "Catalyst::View" : 0,
             "IO::String" : 0,
             "Moose" : 0,
@@ -53,7 +54,7 @@
          "web" : "http://github.com/rbuels/catalyst-view-bio-seqio"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_Dist_Zilla" : {
       "plugins" : [
          {

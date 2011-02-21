@@ -3,9 +3,9 @@ BEGIN {
   $Catalyst::View::Bio::SeqIO::AUTHORITY = 'cpan:RBUELS';
 }
 BEGIN {
-  $Catalyst::View::Bio::SeqIO::VERSION = '0.01';
+  $Catalyst::View::Bio::SeqIO::VERSION = '0.02';
 }
-# ABSTRACT: use Bio::SeqIO as a Catalyst view
+# ABSTRACT: use BioPerl's Bio::SeqIO as a Catalyst view
 
 use Moose;
 use namespace::autoclean;
@@ -96,7 +96,7 @@ __END__
 
 =head1 NAME
 
-Catalyst::View::Bio::SeqIO - use Bio::SeqIO as a Catalyst view
+Catalyst::View::Bio::SeqIO - use BioPerl's Bio::SeqIO as a Catalyst view
 
 =head1 SYNOPSIS
 

@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'use Bio::SeqIO as a Catalyst view',
+  'ABSTRACT' => 'use BioPerl\'s Bio::SeqIO as a Catalyst view',
   'AUTHOR' => 'Robert Buels <rbuels@cpan.org>',
   'BUILD_REQUIRES' => {
     'Bio::PrimarySeq' => '0',
@@ -29,12 +29,13 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Bio::Root::Version' => '1.005002',
     'Bio::SeqIO' => '0',
+    'Catalyst::Action::RenderView' => '0',
     'Catalyst::View' => '0',
     'IO::String' => '0',
     'Moose' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '0.01',
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }

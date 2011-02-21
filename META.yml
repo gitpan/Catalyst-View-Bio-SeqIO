@@ -1,5 +1,5 @@
 ---
-abstract: 'use Bio::SeqIO as a Catalyst view'
+abstract: "use BioPerl's Bio::SeqIO as a Catalyst view"
 author:
   - 'Robert Buels <rbuels@cpan.org>'
 build_requires:
@@ -21,6 +21,7 @@ name: Catalyst-View-Bio-SeqIO
 requires:
   Bio::Root::Version: 1.005002
   Bio::SeqIO: 0
+  Catalyst::Action::RenderView: 0
   Catalyst::View: 0
   IO::String: 0
   Moose: 0
@@ -29,7 +30,7 @@ resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Catalyst-View-Bio-SeqIO
   homepage: http://search.cpan.org/dist/Catalyst-View-Bio-SeqIO
   repository: http://github.com/solgenomics/catalyst-view-bio-seqio
-version: 0.01
+version: 0.02
 x_Dist_Zilla:
   plugins:
     -
